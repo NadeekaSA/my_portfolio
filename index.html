@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nadeeka Sachinthana | Portfolio</title>
+  <meta name="description" content="Software Engineering Undergraduate Portfolio">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
+      background-color: #030712;
+      color: #ffffff;
+      min-height: 100vh;
+    }
+    nav {
+      border-bottom: 1px solid #1f2937;
+      padding: 1rem 1.5rem;
+    }
+    .nav-container {
+      max-width: 72rem;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .nav-brand {
+      font-weight: bold;
+      font-size: 1.125rem;
+      color: #ffffff;
+      text-decoration: none;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      font-size: 0.875rem;
+    }
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover {
+      color: #d1d5db;
+    }
+    main {
+      padding: 3rem 1.5rem;
+      max-width: 72rem;
+      margin: 0 auto;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+    .profile-img {
+      width: 8rem;
+      height: 8rem;
+      border-radius: 50%;
+      border: 4px solid #374151;
+      object-fit: cover;
+      margin-bottom: 1.5rem;
+    }
+    h1 {
+      font-size: 2.25rem;
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+    .subtitle {
+      color: #9ca3af;
+      font-size: 1rem;
+    }
+    .skills {
+      margin-bottom: 4rem;
+    }
+    h2 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    .skills-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+    .skill-tag {
+      padding: 0.5rem 1rem;
+      background-color: #1f2937;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+    }
+    .cta {
+      display: flex;
+      justify-content: center;
+      margin: 2.5rem 0;
+    }
+    .btn {
+      padding: 0.75rem 1.5rem;
+      background-color: #2563eb;
+      color: #ffffff;
+      border-radius: 0.5rem;
+      text-decoration: none;
+      font-size: 0.875rem;
+      transition: background-color 0.2s;
+    }
+    .btn:hover {
+      background-color: #1d4ed8;
+    }
+    .projects {
+      margin-top: 4rem;
+    }
+    .projects h2 {
+      margin-bottom: 1.5rem;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 1.5rem;
+    }
+    @media (min-width: 640px) {
+      .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (min-width: 1024px) {
+      .projects-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    .project-card {
+      border: 1px solid #1f2937;
+      border-radius: 0.75rem;
+      padding: 1.25rem;
+      text-decoration: none;
+      color: #ffffff;
+      transition: border-color 0.2s;
+    }
+    .project-card:hover {
+      border-color: #3b82f6;
+    }
+    .project-card h3 {
+      font-size: 1.125rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .project-card p {
+      font-size: 0.875rem;
+      color: #9ca3af;
+      margin-bottom: 0.75rem;
+    }
+    .project-meta {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: #6b7280;
+    }
+    footer {
+      border-top: 1px solid #1f2937;
+      padding: 2rem 1.5rem;
+      margin-top: 3rem;
+      text-align: center;
+      font-size: 0.875rem;
+      color: #6b7280;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <a href="/" class="nav-brand">Nadeeka</a>
+      <div class="nav-links">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/contact/">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero">
+      <img src="/profile.png" alt="Nadeeka Sachinthana" class="profile-img">
+      <h1>Nadeeka Sachinthana</h1>
+      <p class="subtitle">Software Engineering Undergraduate | Full Stack Developer</p>
+    </section>
+
+    <section class="skills">
+      <h2>Skills</h2>
+      <div class="skills-container">
+        <span class="skill-tag">TypeScript</span>
+        <span class="skill-tag">React</span>
+        <span class="skill-tag">Next.js</span>
+        <span class="skill-tag">Tailwind</span>
+        <span class="skill-tag">PHP</span>
+        <span class="skill-tag">MySQL</span>
+        <span class="skill-tag">Flutter</span>
+        <span class="skill-tag">Firebase</span>
+      </div>
+    </section>
+
+    <div class="cta">
+      <a href="/cv.pdf" download class="btn">Download CV</a>
+    </div>
+
+    <section class="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <a href="https://github.com/NadeekaSA/CafeMocha-System" target="_blank" class="project-card">
+          <h3>CafeMocha-System</h3>
+          <p>Console Based point of sale System for Cafe Mocha coffee shop</p>
+          <div class="project-meta">
+            <span>Java</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/city_nursing_home_management_system" target="_blank" class="project-card">
+          <h3>City Nursing Home Management</h3>
+          <p>A Java Swing application for managing patient details, consultant information, and billing for a nursing home.</p>
+          <div class="project-meta">
+            <span>Java</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/daily-mart-pos" target="_blank" class="project-card">
+          <h3>Daily Mart POS</h3>
+          <p>A fully responsive POS (Point of Sale) system built using HTML, CSS, and JavaScript.</p>
+          <div class="project-meta">
+            <span>JavaScript</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/elite-shine-cleaning-service" target="_blank" class="project-card">
+          <h3>Elite Shine Cleaning Service</h3>
+          <p>A Flutter-based mobile application connecting customers with professional cleaners.</p>
+          <div class="project-meta">
+            <span>Flutter</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/Full-stack-financial-management-web-application" target="_blank" class="project-card">
+          <h3>Financial Management App</h3>
+          <p>Full stack financial management web application for computing society of ICBT Campus.</p>
+          <div class="project-meta">
+            <span>TypeScript</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/Library-Management-System" target="_blank" class="project-card">
+          <h3>Library Management System</h3>
+          <p>A web-based application designed for schools to manage their library operations using PHP and MySQL.</p>
+          <div class="project-meta">
+            <span>PHP</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/naadanu-icbt" target="_blank" class="project-card">
+          <h3>Naadanu ICBT</h3>
+          <p>Full-stack event management application for Nadanu Talent Show at ICBT Campus.</p>
+          <div class="project-meta">
+            <span>TypeScript</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/resort_frontdesk_management_system" target="_blank" class="project-card">
+          <h3>Resort Front Desk Management</h3>
+          <p>A Flutter and Firebase cross-platform application for front desk operations.</p>
+          <div class="project-meta">
+            <span>Dart</span>
+          </div>
+        </a>
+        <a href="https://github.com/NadeekaSA/Web-based-tax-calculator" target="_blank" class="project-card">
+          <h3>Web Tax Calculator</h3>
+          <p>A web based Tax Calculator using HTML, CSS, and JavaScript with tax and leasing calculations.</p>
+          <div class="project-meta">
+            <span>JavaScript</span>
+          </div>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Nadeeka Sachinthana. All rights reserved.</p>
+  </footer>
+</body>
+</html>
